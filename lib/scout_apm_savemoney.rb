@@ -1,3 +1,4 @@
+require "scout_apm_savemoney/version"
 require "scout_apm_savemoney/config"
 require "scout_apm_savemoney/instrument_a_percentage_of_background_jobs_in_scout_apm"
 require "scout_apm_savemoney/instrument_a_percentage_of_web_requests_in_scout_apm"
