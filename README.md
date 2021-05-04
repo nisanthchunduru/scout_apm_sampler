@@ -2,6 +2,11 @@
 
 Instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to an affordable plan in Scout APM
 
+## Why
+
+Application Performance Management (APM) tools are often expensive. This forces many startups to forego using an APM tool. This gem helps you instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to a plan that's affordable for you now and later upgrade as your revenue grows.
+
+
 ## Installation
 
 Add `scout_apm_savemoney` to your Rails app's Gemfile
@@ -26,10 +31,6 @@ ScoutApmSaveMoney.configure do |config|
   config.background_jobs_instrumentation_percentage = 10
 end
 ```
-
-## Why
-
-Application Performance Management (APM) tools are often expensive. This forces many startups to forego using an APM tool. This gem helps you instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to a plan that's affordable for you now and later upgrade as your revenue grows.
 
 ## Todos
 
