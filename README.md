@@ -1,6 +1,6 @@
 # scout_apm_savemoney
 
-Instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to a lower plan in Scout APM and save money
+Instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to an affordable plan in Scout APM
 
 ## Installation
 
