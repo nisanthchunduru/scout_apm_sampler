@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version       = ScoutApmSampler::VERSION
   s.authors       = ["Nisanth Chunduru"]
   s.email         = ["nisanth074@gmail.com"]
-  s.homepage      = "https://github.com/nisanth074/scout_apm_sampler"
+  s.homepage      = "https://github.com/nisanthchunduru/scout_apm_sampler"
   s.summary       = "Send a percentage of web requests and background jobs to Scout APM"
-  s.description   = "Send a percentage of web requests and background jobs to Scout APM so you can subscribe to a lower affordable plan and save money"
+  s.description   = "Send a percentage of web requests and background jobs to Scout APM so you can subscribe to a affordable plan that's commensurate with your company's revenue"
   s.license       = "MIT"
 
   s.files = Dir["{lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
