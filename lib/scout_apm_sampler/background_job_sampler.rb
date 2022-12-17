@@ -1,5 +1,5 @@
-module ScoutApmSaveMoney
-  class InstrumentAPercentageOfBackgroundJobsInScoutApm
+module ScoutApmSampler
+  class BackgroundJobSampler
     def call(worker, msg, queue)
       disable_scout_instrumentation unless instrument_job?
       yield
@@ -8,7 +8,7 @@ module ScoutApmSaveMoney
     private
 
     def instrument_job?
-      rand < (ScoutApmSaveMoney.config.background_jobs_instrumentation_percentage / 100.0)
+      rand < ScoutApmSampler.config.background_job_sampling_rate
     end
 
     def disable_scout_instrumentation

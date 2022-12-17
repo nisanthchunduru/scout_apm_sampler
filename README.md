@@ -1,4 +1,4 @@
-# scout_apm_savemoney
+# scout_apm_sampler
 
 Instrument only a percentage of your Rails app's web requests and background jobs in Scout APM so you can subscribe to an affordable plan in Scout APM
 
@@ -9,10 +9,10 @@ Application Performance Management (APM) tools are often expensive. This forces 
 
 ## Installation
 
-Add `scout_apm_savemoney` to your Rails app's Gemfile
+Add `scout_apm_sampler` to your Rails app's Gemfile
 
 ```
-gem "scout_apm_savemoney"
+gem "scout_apm_sampler"
 ```
 
 and bundle install
@@ -21,14 +21,14 @@ and bundle install
 bundle install
 ```
 
-Now, in an initializer, configure `scout_apm_savemoney` to only send a percentage of web requests and background jobs to Scout APM
+Now, in an initializer, configure `scout_apm_sampler` to only send a percentage of web requests and background jobs to Scout APM
 
 ```ruby
-# config/initializers/scout_apm_savemoney.rb
+# config/initializers/scout_apm_sampler.rb
 
-ScoutApmSaveMoney.configure do |config|
-  config.web_requests_instrumentation_percentage = 10
-  config.background_jobs_instrumentation_percentage = 10
+ScoutApmSampler.configure do |config|
+  config.web_request_sampling_rate = 0.1
+  config.background_job_sampling_rate = 0.05
 end
 ```
 
