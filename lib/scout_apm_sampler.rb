@@ -1,7 +1,8 @@
 require "scout_apm_sampler/version"
 require "scout_apm_sampler/config"
-require "scout_apm_sampler/instrument_a_percentage_of_background_jobs_in_scout_apm"
-require "scout_apm_sampler/instrument_a_percentage_of_web_requests_in_scout_apm"
+require "active_support/concern"
+require "scout_apm_sampler/web_request_sampler"
+require "scout_apm_sampler/background_job_sampler"
 
 module ScoutApmSampler
   class << self
