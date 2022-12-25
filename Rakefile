@@ -1,8 +1,12 @@
 # require_relative "lib/scout_apm_sampler/version"
 require_relative "lib/scout_apm_sampler"
 
-task :build do
+def build
   `gem build scout_apm_sampler.gemspec`
+end
+
+task :build do
+  build
 end
 
 task :publish do
